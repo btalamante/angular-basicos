@@ -1,0 +1,27 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <!-- <h3>Personajes</h3>
+        <hr>
+        <ul>
+            <li *ngFor="let personaje of personajes">
+                {{personaje.nombre}} - {{personaje.poder | number}}
+            </li>
+
+        </ul> -->
+        <!-- <app-personajes [data]="personajes"> -->
+        <app-personajes>
+            <!--[data] es la propiedad dentro del componente personajes.components.ts y "personajes" 
+            es la propiedad dentro de main-page.component.ts-->
+
+        </app-personajes>
+        <!--Componente Hijo-->
+    </div>
+    <div class="col">
+        <!-- <app-agregar [nuevo]="nuevo" (onNuevoPersonaje)="agregarNuevoPersonaje($event)"></app-agregar> -->
+        <app-agregar [nuevo]="nuevo"></app-agregar>
+        <!--(onNuevoPersonaje)="agregarNuevoPersonaje($event)" recibe los datos del HIjo y se invoca el metodo dentro del padre-->
+    </div>
+</div>

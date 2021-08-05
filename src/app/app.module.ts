@@ -8,6 +8,7 @@ import { ContadorModule } from './contador/contador.module';
 // import { HeroeComponent } from './heroes/heroe/heroe.component';
 // import { ListadoComponent } from './heroes/listado/listado.component';
 import { HeroesModule } from './heroes/heroes.module';
+import { DbzModule } from './dbz/dbz.module';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HeroesModule } from './heroes/heroes.module';
   imports: [
     BrowserModule,
     HeroesModule, //se importa para que pueda ser usado en el proyecto
-    ContadorModule
+    ContadorModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
